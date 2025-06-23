@@ -1,0 +1,25 @@
+{
+  "name": "scientific-calculator",
+  "version": "1.0.0",
+  "description": "A scientific calculator web application",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "mathjs": "^10.6.4",
+    "express-rate-limit": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "concurrently": "^7.0.0"
+  }
+}
